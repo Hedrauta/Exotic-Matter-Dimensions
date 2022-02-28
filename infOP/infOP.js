@@ -5,8 +5,8 @@ function infAdd(x, y) {                 // Adds two infNumbers - for example, in
   } else {
     z = Math.min(x, y)
     return z + Math.log10(10 ** (x - z) + 10 ** (y - z));
-  }
-}
+  };
+};
 function infSubtract(x, y) {            // Subtracts two infNumbers - if y is greater than x an error message is output. For example, infSubtract(1,0) returns 0.9542 (log(10-1))
   if (x - y > 16) {                        // If y is less than 1/1e+16 of x, the subtraction is negligible
     return x;
@@ -16,9 +16,9 @@ function infSubtract(x, y) {            // Subtracts two infNumbers - if y is gr
     return -100;
   } else {
     return x + Math.log10(1 - 10 ** (y - x));
-  }
-}
-var notation = "Mixed scientific"
+  };
+};
+var notation = "Mixed scientific";
 function infFormat(x, y) {
   if (x < 3) {
     return (10 ** x).toFixed(y
