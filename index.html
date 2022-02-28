@@ -14,7 +14,7 @@
         <p>You are getting <span class="matterlayertext" id="exoticmatterPerSec">0</span> exotic matter per second</p>
         <p id="tributeDisplay">You have <span class="tributelayertext" id="currentTributes">0</span> tributes</p></td>
         <td class="toptable"><span id="offlineSpeedupDisplay"></span></td>
-        <td class="toptable"><button id="tributeResetButton" onClick="tributeReset()" class="tributeResetButton">Reset to gain <span style="color:#ffcc33; font-size:18px" id="pendingTributes">0</span> tributes<br><span style="font-size:8px" id="tributeExoticMatterRequirement"></span></button>
+        <td class="toptable"><button id="tributeResetButton" onClick="tributeReset()" class="tributeResetButton">Reset to gain <span style="color:#cc4730; font-size:18px" id="pendingTributes">0</span> tributes<br><span style="font-size:8px" id="tributeExoticMatterRequirement"></span></button>
         </td>
       </tr>
     </table>
@@ -305,6 +305,10 @@
         <button class="autobuyerupgrade" id="axisAutobuyerUpgrade" onClick="upgradeAxisAutobuyer()">Reduce the interval by 5%<br>Cost: <span id="axisAutobuyerUpgradeCost">1e50</span> exotic matter</button>
       </div>
     </div>
-    <script type="text/javascript" src="main.js"></script>                                         <!-- Internally embeds JavaScript -->
-  </body>
+    <script type="text/javascript" src="main.js"></script>              <!-- Internally embeds JavaScript -->
+    <script type="text/javascript" src="infOP/infOP.js"></script>
+    <script type="text/javascript" src="core/tab.js"></script>
+    <script type="text/javascript" src="core/maths.js"></script>
+    <script type="text/javascript" src="core/buttons.js"></script>
+    </body>
 </html>
